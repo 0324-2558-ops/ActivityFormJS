@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Student Registration Form</h2>
+
+<form id="registrationForm">
+
+<!-- First Name -->
+<div class="form-group">
+<label>First Name *</label>
+<input type="text" id="firstName" required>
+<small class="error"></small>
+</div>
+
+<!-- Middle Name -->
+<div class="form-group">
+<label>Middle Name</label>
+<input type="text" id="middleName">
+<small class="error"></small>
+</div>
+
+<!-- Last Name -->
+<div class="form-group">
+<label>Last Name *</label>
+<input type="text" id="lastName" required>
+<small class="error"></small>
+
+</div>
+
+<!-- Course -->
+<div class="form-group">
+<label>Course *</label>
+<select id="course" required>
+<option value="">Select Course</option>
+<option>BS Computer Science</option>
+<option>BS Information Technology</option>
+<option>BS Information Systems</option>
+</select>
+<small class="error"></small>
+</div>
+
+ <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" class="input-block">
+                <small class="error"></small>
+            </div>
+
+
+
+<!-- Gender -->
+<div class="form-group">
+<label>Gender *</label>
+<div>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+
+</div>
+<small class="error"></small>
+</div>
+
+<!-- Terms -->
+<div class="form-group">
+<input type="checkbox" id="terms">
+<label>I accept Terms & Conditions *</label>
+<small class="error"></small>
+</div>
+
+<button type="submit">Register</button>
+
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
